@@ -7,16 +7,15 @@ using System.Threading.Tasks;
 
 namespace CleanArchMVC.Domain.Entities
 {
-    public sealed class Category
+    public sealed class Category : Entity
     {
-        public int Id { get; private set; }
         public string Name { get; private set; }
 
         public Category(string name)
         {
             ValidateDomain(name);
         }
-        public Category(string name, int id)
+        public Category(int id, string name)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id value");
             Id = id;
