@@ -10,4 +10,8 @@
     <ProjectReference Include="..\CleanArchMVC.Domain\CleanArchMVC.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>
